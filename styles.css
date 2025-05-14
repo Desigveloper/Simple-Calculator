@@ -1,0 +1,122 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.title {
+    color: #5C6AC4;
+    font-size: 2rem;
+}
+
+p.currentTime {
+    font-size: 0.95rem;
+    line-height: 0.5;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Main Calculator Styles */
+.calculator {
+    background: linear-gradient(to top, #161616, #363636);
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1em 1.5em;
+    margin-top: 1em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+}
+
+.output-screen {
+    background: linear-gradient(to bottom, #f7f7f7, #e5e5e5);
+    padding: 2em 0.5em 0;
+    border-radius: 3px;
+    text-align: right;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.output-screen::before {
+    content: "Calculator";
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    color: #f9f9f9;
+    font-size: 1rem;
+}
+
+.output {
+    font-size: 2.5rem;
+    line-height: 0;
+    color: #363636;
+}
+
+
+.keyboard-wrapper {
+    border: 1px solid #f7f7f740;
+    background-color: #16161645;
+    border-radius: 5px;
+    padding: 0.75em 0.5em;
+    position: relative;
+    margin-top: 2.5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4em;
+}
+
+.btn {
+    padding: 0.5em 0.75em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.btn-op {
+    background-color: #ffc70f;
+    font-weight: 600;
+}
+
+.btn-op:hover {
+    background-color: #f1cf5d;
+}
